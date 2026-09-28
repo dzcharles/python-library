@@ -216,11 +216,7 @@ _DEFAULT_LOG_CONFIG: dict[str, Any] = {
 }
 
 def setup_logging() -> None:
-    """Returns a pre-configured logger 
-
-    Returns:
-        logger (object): the logger object
-    """
+    """Setup the logging configuration based on the default settings."""
 
     Path("logs").mkdir(parents=True, exist_ok=True)
 
